@@ -23,7 +23,7 @@
             <span>专属二维码</span>
           </div>
           <div>
-            <qrcode :val="qrVal" :size="100"> </qrcode>
+            <qrcode :val="qrcodeUrl" :size="100"> </qrcode>
           </div>
         </el-card>
       </el-col>
@@ -87,7 +87,6 @@ export default {
   name: 'user',
   data() {
     return {
-      qrVal: 'http://www.nikaixinjiuhao.com/?id=1',
       certLoding: false,
       submitLoding: false,
       certifiedInfo: {
@@ -129,7 +128,8 @@ export default {
       'name',
       'avatar',
       'status',
-      'statusLabel'
+      'statusLabel',
+      'qrcodeUrl'
     ]),
     statusType: function() {
       return this.status === 1 ? 'success' : 'danger'

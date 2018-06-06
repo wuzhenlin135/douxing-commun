@@ -177,6 +177,10 @@ export default {
       this.fetchList()
     },
     handleDownload() {
+      if (!this.list) {
+        this.$message({ message: '没有可以导出的数据', type: 'warning' })
+        return
+      }
       this.downloadLoading = true
       import('@/vendor/Export2Excel').then(excel => {
         const tHeader = ['ID', '订单号', '交易时间', '景区', '商品', '数量', '金额', '客栈', '联系方式', '时间地点', '状态']
