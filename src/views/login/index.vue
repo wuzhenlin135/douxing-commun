@@ -24,7 +24,9 @@
         <span style="margin-right:20px;">
           <router-link to="signup">注册</router-link>
         </span>
-        <span>找回密码</span>
+        <span>
+	  <router-link to="forget">找回密码</router-link>
+	</span>
       </div>
     </el-form>
   </div>

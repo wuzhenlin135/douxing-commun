@@ -27,6 +27,14 @@ export function signup(signupForm) {
   })
 }
 
+export function forget(signupForm) {
+  return request({
+    url: '/web/forget-passowrd',
+    method: 'post',
+    data: Qs.stringify(signupForm)
+  })
+}
+
 export function resetToken(username, code, sign) {
   const data = Qs.stringify({
     'username': username,

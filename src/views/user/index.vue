@@ -203,6 +203,7 @@ export default {
       this.submitLoding = true
       submitCert(submitCertFrom).then(response => {
         console.log(response.obj.id)
+        this.$message({ message: '提交成功，平台将会在1个工作日内审核，请耐心等待。', type: 'success' })
         this.fetchCertInfo()
       }).finally(() => {
         this.submitLoding = false
