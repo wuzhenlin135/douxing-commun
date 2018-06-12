@@ -148,7 +148,7 @@ export default {
     fetchCertInfo() {
       this.certLoding = true
       getCertInfo().then(response => {
-        this.certifiedInfo = response.obj
+        this.certifiedInfo = Object.assign(this.certifiedInfo, response.obj)
       }).finally(() => {
         this.certLoding = false
       })

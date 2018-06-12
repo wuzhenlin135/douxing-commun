@@ -51,19 +51,6 @@ export const constantRouterMap = [
     ]
   },
   {
-    path: '/exchange',
-    component: Layout,
-    name: 'exchange',
-    children: [
-      {
-        path: 'index',
-        name: 'exchange',
-        component: () => import('@/views/exchange/index'),
-        meta: { title: '兑换商品', icon: 'form' }
-      }
-    ]
-  },
-  {
     path: '/user',
     component: Layout,
     redirect: '/user/index',
@@ -78,6 +65,138 @@ export const constantRouterMap = [
       }
     ]
   },
+  {
+    path: '/exchange',
+    component: Layout,
+    name: 'exchange',
+    children: [
+      {
+        path: 'index',
+        name: 'exchange',
+        component: () => import('@/views/exchange/index'),
+        meta: { title: '兑换商品', icon: 'form' }
+      }
+    ]
+  },
+  //  test begin
+  {
+    path: '/act1',
+    component: Layout,
+    name: 'act1',
+    children: [
+      {
+        path: 'index',
+        name: 'act1',
+        component: () => import('@/views/exchange/index'),
+        meta: { title: '在线社区', icon: 'form' }
+      }
+    ]
+  },
+  {
+    path: '/act2',
+    component: Layout,
+    name: 'act2',
+    children: [
+      {
+        path: 'index',
+        name: 'act2',
+        component: () => import('@/views/exchange/index'),
+        meta: { title: '物业管理', icon: 'form' }
+      }
+    ]
+  },
+  {
+    path: '/act3',
+    component: Layout,
+    name: 'act3',
+    children: [
+      {
+        path: 'index',
+        name: 'act3',
+        component: () => import('@/views/exchange/index'),
+        meta: { title: '人才输入', icon: 'form' }
+      }
+    ]
+  },
+  {
+    path: '/act4',
+    component: Layout,
+    name: 'act4',
+    children: [
+      {
+        path: 'index',
+        name: 'act4',
+        component: () => import('@/views/exchange/index'),
+        meta: { title: '房屋租赁', icon: 'form' }
+      }
+    ]
+  },
+  {
+    path: '/act5',
+    component: Layout,
+    name: 'act5',
+    children: [
+      {
+        path: 'index',
+        name: 'act5',
+        component: () => import('@/views/exchange/index'),
+        meta: { title: '法律援助', icon: 'form' }
+      }
+    ]
+  },
+  {
+    path: '/act6',
+    component: Layout,
+    name: 'act6',
+    children: [
+      {
+        path: 'index',
+        name: 'act6',
+        component: () => import('@/views/exchange/index'),
+        meta: { title: '酒店耗材', icon: 'form' }
+      }
+    ]
+  },
+  {
+    path: '/act7',
+    component: Layout,
+    name: 'act7',
+    children: [
+      {
+        path: 'index',
+        name: 'act7',
+        component: () => import('@/views/exchange/index'),
+        meta: { title: '汽车租赁', icon: 'form' }
+      }
+    ]
+  },
+  {
+    path: '/act8',
+    component: Layout,
+    name: 'act8',
+    children: [
+      {
+        path: 'index',
+        name: 'act8',
+        component: () => import('@/views/exchange/index'),
+        meta: { title: '广告设计', icon: 'form' }
+      }
+    ]
+  },
+  {
+    path: '/act9',
+    component: Layout,
+    name: 'act9',
+    children: [
+      {
+        path: 'index',
+        name: 'act9',
+        component: () => import('@/views/exchange/index'),
+        meta: { title: '失误招领', icon: 'form' }
+      }
+    ]
+  },
+  //  test end
   { path: '*', redirect: '/404', hidden: true }
 ]
 
